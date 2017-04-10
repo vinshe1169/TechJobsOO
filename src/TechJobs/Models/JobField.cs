@@ -13,7 +13,7 @@
             nextId++;
         }
 
-        public JobField(string value) : this()
+        public JobField(string value) : this() 
         {
             Value = value;
         }
