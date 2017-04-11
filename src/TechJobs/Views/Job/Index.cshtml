@@ -1,4 +1,4 @@
-﻿@model TechJobs.ViewModels.JobFieldsViewModel
+﻿@model TechJobs.Models.Job
 @{
 // TODO #2.1- declare the ViewModel (outside of this @{ } block)
 }
@@ -6,23 +6,24 @@
     <table class="job-listing">
         <tr>
             <td>Name</td>
-            <td>@job.Name</td>
+            <td>@Model.Name</td>
         </tr>
         <tr>
             <td>Employer</td>
-            <td>@job.Employer</td>
+            <td>@Model.Employer</td>
+
         </tr>
         <tr>
             <td>Location</td>
-            <td>@job.Location</td>
+            <td>@Model.Location</td>
         </tr>
         <tr>
             <td>Skill</td>
-            <td>@job.CoreCompetency</td>
+            <td>@Model.CoreCompetency</td>
         </tr>
         <tr>
             <td>Position Type</td>
-            <td>@job.PositionType</td>
+            <td>@Model.PositionType</td>
         </tr>
     </table>
     }

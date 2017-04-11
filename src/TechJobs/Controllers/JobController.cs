@@ -43,6 +43,7 @@ namespace TechJobs.Controllers
 
                 JobData jb = JobData.GetInstance();
                 Job newJob = new Job();
+                newJob.Name = newJobViewModel.Name;
                 newJob.Employer = jb.Employers.Find(newJobViewModel.EmployerID);
                 newJob.CoreCompetency = jb.CoreCompetencies.Find(newJobViewModel.CoreCompetencyID);
                 newJob.Location = jb.Locations.Find(newJobViewModel.LocationID);
